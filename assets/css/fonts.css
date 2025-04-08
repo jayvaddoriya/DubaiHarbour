@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "OatmealProTRIAL-Regular";
+    font-weight: 400;
+    font-style: "normal";
+    font-display: swap;
+    src: url("../fonts/oatmeal/OatmealProTRIAL-Regular.eot");
+    src: url("../fonts/oatmeal/OatmealProTRIAL-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/oatmeal/OatmealProTRIAL-Regular.woff") format("woff"), url("../fonts/oatmeal/OatmealProTRIAL-Regular.woff2") format("woff2"),
+        url("../fonts/oatmeal/OatmealProTRIAL-Regular.ttf") format("truetype"), url("../fonts/oatmeal/OatmealProTRIAL-Regular.svg#OatmealProTRIAL-Regular") format("svg");
+}
+@font-face {
+    font-family: "OatmealProTRIAL-Medium";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/oatmeal/OatmealProTRIAL-Medium.eot");
+    src: url("../fonts/oatmeal/OatmealProTRIAL-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/oatmeal/OatmealProTRIAL-Medium.woff") format("woff"), url("../fonts/oatmeal/OatmealProTRIAL-Medium.woff2") format("woff2"),
+        url("../fonts/oatmeal/OatmealProTRIAL-Medium.ttf") format("truetype"), url("../fonts/oatmeal/OatmealProTRIAL-Medium.svg#OatmealProTRIAL-Medium") format("svg");
+}
+@font-face {
+    font-family: "OatmealProTRIAL-SemiBold";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/oatmeal/OatmealProTRIAL-SemiBold.eot");
+    src: url("../fonts/oatmeal/OatmealProTRIAL-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/oatmeal/OatmealProTRIAL-SemiBold.woff") format("woff"), url("../fonts/oatmeal/OatmealProTRIAL-SemiBold.woff2") format("woff2"),
+        url("../fonts/oatmeal/OatmealProTRIAL-SemiBold.ttf") format("truetype"), url("../fonts/oatmeal/OatmealProTRIAL-SemiBold.svg#OatmealProTRIAL-SemiBold") format("svg");
+}
+@font-face {
+    font-family: "OatmealProTRIAL-Bold";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/oatmeal/OatmealProTRIAL-Bold.eot");
+    src: url("../fonts/oatmeal/OatmealProTRIAL-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/oatmeal/OatmealProTRIAL-Bold.woff") format("woff"), url("../fonts/oatmeal/OatmealProTRIAL-Bold.woff2") format("woff2"),
+        url("../fonts/oatmeal/OatmealProTRIAL-Bold.ttf") format("truetype"), url("../fonts/oatmeal/OatmealProTRIAL-Bold.svg#OatmealProTRIAL-Bold") format("svg");
+}
+
+
+.fw-normal {
+    font-family: "OatmealProTRIAL-Regular";
+}
+.fw-medium {
+    font-family: "OatmealProTRIAL-Medium";
+}
+.fw-semibold {
+    font-family: "OatmealProTRIAL-SemiBold"; 
+}
+.fw-bold {
+    font-family: "OatmealProTRIAL-Bold"; 
+}

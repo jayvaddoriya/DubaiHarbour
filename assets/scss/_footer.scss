@@ -1,0 +1,25 @@
+.theme-footer {
+    border-color: var(--light-blue01) !important;
+    
+    a {
+        color: var(--black02); font-weight: 400;
+
+        &:hover {
+            color: var(--primary);text-decoration: underline;
+        }
+    }
+
+    .link__list {
+        
+        li {
+            &:not(:last-child) { 
+
+                &::after {
+                    content: '';width: 1px;height: 100%;display: inline-block;background-color: var(--light-blue01);
+                    margin: 0% .5rem;vertical-align: middle;
+                }
+            }
+        }
+    }
+
+}
