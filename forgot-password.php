@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <?php include('includes/favicon.inc.php'); ?>
-    <title>Forgot Password</title>
-
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:type" content="website" /> 
-    
-    <!-- cache control -->
-    <?php include('includes/cache-control.inc.php'); ?>
-    <!-- stylesheets -->
-    <?php $props=""; include('includes/stylesheets.inc.php'); ?>
- 
-</head> 
-<body>
-    <!-- header menu -->
-    <?php $props=""; include('includes/header.inc.php'); ?>
+<!-- header menu -->
+<?php include('includes/header.inc.php'); ?>
 
     <main class="main__scroll__area"> 
         <section class="login-flow-sec py-5">
@@ -64,11 +40,8 @@
         </section>
     </main>
 
-    <!-- footer and all scripts -->
-    <?php 
-        $props="";  
-        include('includes/footer.inc.php'); 
-    ?>
-  
-</body> 
-</html>
+<!-- footer and all scripts -->
+<?php  
+    include('includes/footer.inc.php'); 
+?>
+ 

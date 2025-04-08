@@ -15,6 +15,7 @@
   --gray04: #F5F5F5;
   --gray05: #9E9E9E;
   --body-bg: #F5F5F5;
+  --red: #F43737;
   --oatmeal-regular: "OatmealProTRIAL-Regular";
   --oatmeal-medium: "OatmealProTRIAL-Medium";
   --oatmeal-semibold: "OatmealProTRIAL-SemiBold";
@@ -310,6 +311,39 @@ ul li {
     max-height: 2rem;
   }
 }
+.dropdown-menu {
+  box-shadow: 0px 0px 8px 0px rgba(187, 187, 187, 0.1215686275);
+  border-color: var(--light-blue);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  min-width: max-content;
+}
+
+.bottom-header .desktop-menu {
+  font-size: 1.125rem;
+  line-height: 1;
+}
+.bottom-header .desktop-menu .active a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: var(--oatmeal-bold);
+}
+.bottom-header .desktop-menu li:not(:last-child) {
+  border-right: 1px solid var(--gray);
+  padding-right: 0.5rem;
+}
+
+.offcanvas .offcanvas-header {
+  border-color: var(--light-blue02) !important;
+}
+.offcanvas .link__list a {
+  color: var(--gray03);
+}
+.offcanvas .link__list a.active {
+  color: var(--black01);
+  font-weight: 500;
+}
+
 .theme-footer {
   border-color: var(--light-blue01) !important;
 }
@@ -474,4 +508,57 @@ ul li {
   border-color: var(--primary);
   outline: none;
   box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
-}/*# sourceMappingURL=style.css.map */
+}
+
+.dashboard__page .info__box {
+  border: 0.3px solid rgba(217, 230, 253, 0.3568627451);
+  box-shadow: 0px 0px 10px 0px rgba(58, 58, 58, 0.0509803922);
+  border-radius: 0.875rem;
+  min-height: 161px;
+  flex-direction: row-reverse;
+}
+.dashboard__page .info__box .icon__box {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: rgba(217, 230, 253, 0.21);
+}
+.dashboard__page .info__box .number {
+  color: var(--black02);
+}
+.dashboard__page .notification__list {
+  max-height: 321px;
+  overflow-y: auto;
+}
+.dashboard__page .notification__list li:not(:last-child) {
+  border-bottom: 1px solid var(--light-blue);
+}
+.dashboard__page .notification__list li a {
+  color: var(--gray01);
+}
+.dashboard__page .notification__list li a.danger {
+  color: var(--red);
+}
+.dashboard__page .notification__list li a .time {
+  color: var(--gray03);
+}
+.dashboard__page .notification__list li a:hover, .dashboard__page .notification__list li a:focus {
+  background-color: var(--gray04);
+}
+
+@media (max-width: 1399px) {
+  .dashboard__page .notification__list {
+    max-height: 396px;
+  }
+}
+@media (max-width: 575px) {
+  .dashboard__page .info__box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.outline__btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(217, 230, 253, 0.6);
+} 

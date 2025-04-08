@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <?php include('includes/favicon.inc.php'); ?>
-    <title>Change Password</title>
-
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:type" content="website" /> 
-    
-    <!-- cache control -->
-    <?php include('includes/cache-control.inc.php'); ?>
-    <!-- stylesheets -->
-    <?php $props=""; include('includes/stylesheets.inc.php'); ?>
- 
-</head> 
-<body>
-    <!-- header menu -->
-    <?php $props=""; include('includes/header.inc.php'); ?>
+<!-- header menu -->
+<?php include('includes/header.inc.php'); ?>
 
     <main class="main__scroll__area"> 
         <section class="login-flow-sec py-5">
@@ -78,25 +54,22 @@
         </section>
     </main>
 
-    <!-- footer and all scripts -->
-    <?php 
-        $props="";  
-        include('includes/footer.inc.php'); 
-    ?>
+<!-- footer and all scripts -->
+<?php   
+    include('includes/footer.inc.php'); 
+?>
 
-    <script>
-    document.querySelectorAll(".togglePasswordBtn").forEach(button => {
-        button.addEventListener("click", () => {
-        const targetId = button.getAttribute("data-target");
-        const input = document.getElementById(targetId);
-        const isHidden = input.type === "password";
+<script>
+document.querySelectorAll(".togglePasswordBtn").forEach(button => {
+    button.addEventListener("click", () => {
+    const targetId = button.getAttribute("data-target");
+    const input = document.getElementById(targetId);
+    const isHidden = input.type === "password";
 
-        input.type = isHidden ? "text" : "password";
-        button.classList.toggle("off", !isHidden); // keep "off" when hidden
-        });
+    input.type = isHidden ? "text" : "password";
+    button.classList.toggle("off", !isHidden); // keep "off" when hidden
     });
-    </script>
+});
+</script>
 
-  
-</body> 
-</html>
+ 

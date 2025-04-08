@@ -4,4 +4,4 @@
 <link rel="stylesheet" type="text/css" href="assets/css/intlTelInput.css">
 <?php endif; ?>
 <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
