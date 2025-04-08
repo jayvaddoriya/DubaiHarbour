@@ -38,7 +38,7 @@
                 <a href="index.php" class="d-none d-lg-inline-block logo" aria-label="Marinas Logo">
                     <img src="assets/images/logo.svg" alt="Dubai Harbour Marinas" width="254px" height="70px" />
                 </a>
-                <a href="/" class="d-inline-block d-lg-none" aria-label="Marinas Logo">
+                <a href="index.php" class="d-inline-block d-lg-none" aria-label="Marinas Logo">
                     <img src="assets/images/mobile-logo.svg" alt="Dubai Harbour Marinas" width="36px" height="36px" />
                 </a>
             </div> 
@@ -49,7 +49,7 @@
     <?php if(isset($showSubMenu) && $showSubMenu == true ): ?>
     <div class="bottom-header bg-white py-4">
         <div class="container">
-            <div class="bottom-header-wrap d-flex justify-content-between">
+            <div class="bottom-header-wrap d-flex align-items-center justify-content-between">
                 <div class="left-menu">
                     <div class="mobile-menu d-flex d-lg-none gap-3">
                         <button  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="mobile-menu-btn btn p-0 border-0" aria-label="Toggle navigation">
@@ -144,7 +144,7 @@
             </div>
         </div>
     </div>
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-top offcanvas-menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header d-flex justify-content-between align-items-center border-bottom">
             <p class="offcanvas-title m-0 fs-6 fw-semibold title__color" id="offcanvasExampleLabel">Menu</p>
             <button type="button" class="btn p-0 border-0 text-reset" data-bs-dismiss="offcanvas" aria-label="Close">

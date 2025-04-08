@@ -5,6 +5,10 @@
     <main class="main__scroll__area"> 
         <section class="login-flow-sec py-5">
             <div class="container py-md-3">
+                <div class="box__shadow bg-white p-4 rounded-4 mb-3 d-md-none">
+                    <p class="text-dark fw-semibold mb-0 lead-lg text-center">Welcome to Contractor Login </p>
+                </div>
+
                 <div class="row g-4">
                     <div class="col-lg-7">
                         <div class="box__shadow bg-white p-4 rounded-top-4">

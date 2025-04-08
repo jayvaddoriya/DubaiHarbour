@@ -344,6 +344,10 @@ ul li {
   font-weight: 500;
 }
 
+.offcanvas-menu {
+  --bs-offcanvas-height: 184px;
+}
+
 .theme-footer {
   border-color: var(--light-blue01) !important;
 }
@@ -561,4 +565,4 @@ ul li {
   height: 2.5rem;
   border-radius: 0.5rem;
   border: 1px solid rgba(217, 230, 253, 0.6);
-} 
+}/*# sourceMappingURL=style.css.map */
