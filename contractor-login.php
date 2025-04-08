@@ -1,50 +1,76 @@
-<?php include('include/header.php'); ?>
 
-<section class="login-flow-sec contractor-login-sec">
-    <div class="container">
-        <div class="login-flow-wrapper">
-            <div class="login-form-view">
-                <div class="login-form-heading">
-                    <h1>Contractor Login</h1>
-                </div>
-                <div class="login-form">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Username</label>
-                                    <input type="text" name="username" class="form-control" placeholder="Enter your User Name" />
+<!-- header menu -->
+<?php include('includes/header.inc.php'); ?>
+
+    <main class="main__scroll__area"> 
+        <section class="login-flow-sec py-5">
+            <div class="container py-md-3">
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="box__shadow bg-white p-4 rounded-top-4">
+                            <h1 class="fw-semibold mb-0 lead-lg title__color">Contractor Login</h1>
+                        </div>
+                        <div class="auth__form__box box__shadow bg-white p-4 rounded-bottom-4 mt-2">
+                            <form>
+                                <div class="row g-4 justify-content-center">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="username" class="label">Username</label> 
+                                            <input type="text" name="username" id="username" class="form-control" placeholder="Enter your New Password" />  
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="password" class="label">Password</label>
+                                            <div class="position-relative password__box"> 
+                                                <input type="text" name="password" id="password" class="form-control" placeholder="Confirm your New Password" /> 
+                                                <button type="button" class="togglePasswordBtn btn p-0 border-0 position-absolute top-50 translate-middle-y" data-target="password"> 
+                                                </button>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end gap-2 fs-12 mt-3 forgot__links">
+                                                <a href="forgot-password.php" aria-label="Forgot Password">Forgot Password</a>
+                                                <a href="new-registration.php" aria-label="New Registration">New Registration</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">  
+                                        <button type="button" aria-label="Login" class="btn btn-primary px-5 auth__submit__btn">Login</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group password-field">
-                                    <label>Password</label>
-                                    <input type="password" name="password" class="form-control" placeholder="Enter your password" />
-                                    <button type="button" class="eye-btn">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15.5799 11.9999C15.5799 13.9799 13.9799 15.5799 11.9999 15.5799C10.0199 15.5799 8.41992 13.9799 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C13.9799 8.41992 15.5799 10.0199 15.5799 11.9999Z" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M11.9998 20.2702C15.5298 20.2702 18.8198 18.1902 21.1098 14.5902C22.0098 13.1802 22.0098 10.8102 21.1098 9.40021C18.8198 5.80021 15.5298 3.72021 11.9998 3.72021C8.46984 3.72021 5.17984 5.80021 2.88984 9.40021C1.98984 10.8102 1.98984 13.1802 2.88984 14.5902C5.17984 18.1902 8.46984 20.2702 11.9998 20.2702Z" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
+                              
+                            </form>
                         </div>
-                        <div class="forgot-new-registration">
-                            <a href="forgot-password.php" aria-label="Forgot Password">Forgot Password</a>
-                            <a href="new-registration.php" aria-label="New Registration">New Registration</a>
-                        </div>
-                        <div class="btn-action">
-                            <button type="button" aria-label="Login Button" class="btn-theme">Login</button>
-                        </div>
-                    </form>
+                    </div>
+    
+                    <div class="col-lg-5 d-flex">
+                        <img 
+                            src="assets/images/resources/contractor-login.webp" 
+                            alt="Forgot Password" width="788px" height="545px" 
+                            class="img-fluid w-100 object-fit-cover rounded-4 box__shadow" 
+                        />
+                    </div>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <div class="image-view">
-                <img src="/assets/images/resources/contractor-login.webp" alt="Contractor Login" width="788px" height="407px" />
-            </div>
-        </div>
-    </div>
-</section>
+<!-- footer and all scripts -->
+<?php   
+    include('includes/footer.inc.php'); 
+?>
 
-<?php include('include/footer.php'); ?>
+<script>
+document.querySelectorAll(".togglePasswordBtn").forEach(button => {
+    button.addEventListener("click", () => {
+    const targetId = button.getAttribute("data-target");
+    const input = document.getElementById(targetId);
+    const isHidden = input.type === "password";
+
+    input.type = isHidden ? "text" : "password";
+    button.classList.toggle("off", !isHidden); // keep "off" when hidden
+    });
+});
+</script>
+
+  

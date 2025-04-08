@@ -20,9 +20,9 @@
 
 <script type="text/javascript" src="assets/js/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="assets/js/select2.min.js"></script>
-<?php if(isset($haveCountryCode) && $haveCountryCode === true): ?>
+<script type="text/javascript" src="assets/js/select2.min.js"></script> 
 <script type="text/javascript" src="assets/js/intlTelInput-jquery.min.js"></script>
-<?php endif; ?>
 <script type="text/javascript" src="assets/js/custom.js"></script>
  
+</body> 
+</html>
