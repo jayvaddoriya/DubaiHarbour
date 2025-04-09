@@ -73,8 +73,8 @@
                     </div> -->
 
                     <ul class="list-unstyled desktop-menu p-0 m-0 d-none d-lg-flex gap-2">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Registered Contractor</a></li>
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="registered-contractor.php">Registered Contractor</a></li>
                         <li><a href="#">Apply For Permit</a></li>
                     </ul>
                 </div>
@@ -157,8 +157,8 @@
         </div>
         <div class="offcanvas-body">
             <ul class="list-unstyled d-flex flex-column gap-3 text-center link__list">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Registered Contractor</a></li>
+                <li><a href="index.php" class="active">Home</a></li>
+                <li><a href="registered-contractor.php">Registered Contractor</a></li>
                 <li><a href="#">Apply For Permit</a></li>
             </ul>
         </div>
