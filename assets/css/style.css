@@ -63,6 +63,10 @@ body {
   color: var(--black01);
 }
 
+.text-2b {
+  color: var(--black02);
+}
+
 .lead-lg {
   font-size: 1.375rem;
 } /*22px*/
@@ -82,8 +86,8 @@ body {
   font-size: 0.937rem;
 }
 
-.z--1 {
-  z-index: -1;
+.text-muted {
+  color: var(--gray03) !important;
 }
 
 .bg-light {
@@ -102,28 +106,9 @@ body {
   background-color: var(--dark) !important;
 }
 
-.bg-gradient {
-  background-color: rgba(215, 233, 243, 0.24) !important;
-}
-
 .z-index {
   z-index: 99;
   position: relative;
-}
-
-.ff-poppins {
-  font-family: var(--poppins);
-  font-display: swap;
-}
-
-.ptb {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.col--5 {
-  flex: 0 0 20%;
-  max-width: 20%;
 }
 
 .transition {
@@ -150,7 +135,7 @@ body {
   max-width: calc(100% - 200px);
 }
 
-@media (max-width: 1399.99px) {
+@media (max-width: 1599.99px) {
   .container {
     max-width: calc(100% - 140px);
   }
@@ -219,7 +204,6 @@ ul li {
 }
 
 .btn-outline-primary {
-  border-width: 2px;
   background-color: transparent;
   border-color: var(--primary);
   color: var(--primary);
@@ -386,6 +370,11 @@ ul li {
 }
 .form-control::placeholder, .form-select::placeholder {
   color: var(--gray05);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary);
+  border-color: var(--primary) !important;
 }
 
 .country__code__box .code__box {
@@ -567,15 +556,80 @@ ul li {
   border: 1px solid rgba(217, 230, 253, 0.6);
 }
 
-.registered__contractor__page .step__box span {
-  left: 3rem !important;
+.registered__contractor__page .step__box .form-stepper-list .step__icon {
+  width: 115px;
+  height: 48px;
+}
+.registered__contractor__page .step__box .form-stepper-list .fill__icon {
+  display: none;
+}
+.registered__contractor__page .step__box .form-stepper-list .step__label {
+  color: #19315E;
+}
+.registered__contractor__page .step__box .form-stepper-list .step__title {
+  font-size: 0.875rem;
+  color: var(--gray01);
+  font-weight: 400;
+  font-family: var(--oatmeal-regular);
+}
+.registered__contractor__page .step__box .form-stepper-active .fill__icon, .registered__contractor__page .step__box .form-stepper-completed .fill__icon {
+  display: block;
+}
+.registered__contractor__page .step__box .form-stepper-active .outline__icon, .registered__contractor__page .step__box .form-stepper-completed .outline__icon {
+  display: none;
+}
+.registered__contractor__page .step__box .form-stepper-active .step__icon, .registered__contractor__page .step__box .form-stepper-completed .step__icon {
+  width: 96px;
+  height: 40px;
+}
+.registered__contractor__page .step__box .form-stepper-active .step__label, .registered__contractor__page .step__box .form-stepper-completed .step__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0C0C0C;
+  font-family: var(--oatmeal-semibold);
+}
+.registered__contractor__page .step__box .form-stepper-active .step__title, .registered__contractor__page .step__box .form-stepper-completed .step__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: var(--oatmeal-semibold);
+  color: var(--black02);
+}
+@media (max-width: 767px) {
+  .registered__contractor__page .step__box .form-stepper-list {
+    display: none;
+    position: relative;
+  }
+  .registered__contractor__page .step__box .form-stepper-list .arrow__icon {
+    position: absolute;
+    top: 50%;
+    right: -1.5rem;
+    transform: translateY(-50%);
+  }
+  .registered__contractor__page .step__box .form-stepper-list .step__title {
+    background-color: #fff;
+    position: relative;
+    z-index: 11;
+    padding-right: 0.5rem;
+  }
+  .registered__contractor__page .step__box .form-stepper-active {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+  }
+  .registered__contractor__page .step__box .form-stepper-active .step__title {
+    font-size: 1rem;
+  }
+  .registered__contractor__page .step__box .form-stepper-completed {
+    display: none;
+  }
 }
 .registered__contractor__page .file__box {
   border: 1px dashed #E0E0E0;
 }
-.registered__contractor__page .file__erro__box figure {
+.registered__contractor__page .file__erro__box .info__icon {
   top: 20%;
-  left: 12.5rem;
+  right: 0%;
 }
 .registered__contractor__page .date__box {
   border: 1px solid #BDD2FA;
@@ -612,4 +666,37 @@ ul li {
 .registered__contractor__page .content__scrollbox {
   background-color: #EFF5FF;
   font-weight: 300;
+}
+.registered__contractor__page .document__list {
+  border-top: 1px solid #E0E0E0;
+}
+.registered__contractor__page .document__list li {
+  border-bottom: #E0E0E0 solid 1px;
+}
+.registered__contractor__page .document__list li .info__box {
+  color: var(--gray01);
+  background-color: #F5F8FF;
+  min-height: 2.25rem;
+}
+.registered__contractor__page .document__list li .date__border__color {
+  border-color: var(--black02) !important;
+}
+.registered__contractor__page .document__list li:hover {
+  background-color: var(--gray02);
+}
+@media (max-width: 767px) {
+  .registered__contractor__page .document__list {
+    border-top: 0;
+  }
+  .registered__contractor__page .document__list li {
+    border-bottom-color: #D9E6FD;
+  }
+}
+.registered__contractor__page .approved__box {
+  max-width: 417px;
+  color: #19315E;
+}
+
+.mt--1 {
+  margin-top: 1px;
 }/*# sourceMappingURL=style.css.map */

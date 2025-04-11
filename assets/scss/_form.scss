@@ -11,6 +11,10 @@
     }
 }
 
+.form-check-input:checked {
+    background-color: var(--primary);border-color: var(--primary) !important;
+}
+
 .country__code__box {
     
     .code__box {
