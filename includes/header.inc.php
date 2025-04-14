@@ -75,7 +75,7 @@
                     <ul class="list-unstyled desktop-menu p-0 m-0 d-none d-lg-flex gap-2">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li><a href="registered-contractor.php">Registered Contractor</a></li>
-                        <li><a href="#">Apply For Permit</a></li>
+                        <li><a href="apply-for-permit.php">Apply For Permit</a></li>
                     </ul>
                 </div>
                 <div class="right-menu ">

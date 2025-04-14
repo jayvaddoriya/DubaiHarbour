@@ -87,6 +87,10 @@ body {
     .container { max-width: calc(100% - 140px); }
     
 }
+@media (min-width: 2000px) {
+    .container { max-width: 1920px; }
+    
+}
   
 .link { 
     color: var(--primary);
@@ -126,7 +130,7 @@ ul {
     padding: 0.75rem 1.5rem;font-family: var(--oatmeal-bold);
     justify-content: center;
     align-items: center;
-    display: inline-flex;gap: 1rem;
+    display: inline-flex;gap: .5rem;
     transition: all .4s ease-in-out;   
 }
 .btn-primary { 
@@ -180,6 +184,19 @@ ul {
 .modal-open {
     padding-right: 0 !important;
 } 
+
+.pagination {
+    .page-item {
+        .page-link {
+            width: 2.5rem;height: 2.5rem;border: 1px solid var(--light-blue);border-radius: .5rem;
+            padding: 0%;display: flex;align-items: center;justify-content: center;color: var(--gray01); 
+
+            &:hover, &.active {
+                background-color: var(--light-blue);color: var(--black02);
+            } 
+        }
+    }
+}
       
 @media (max-width:1199.99px) {
     html { font-size: 93.75%; } 
@@ -203,8 +220,7 @@ ul {
         max-width: calc(100% - 2rem);padding: 0%;  
     }
     
-}
-  
+} 
 
 @import "./navbar";
 

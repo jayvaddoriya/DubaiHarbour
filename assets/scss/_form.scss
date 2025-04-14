@@ -11,8 +11,14 @@
     }
 }
 
+.form-check-input {
+    border: 1px solid var(--light-blue02);
+    border-radius: 2px;
+}
 .form-check-input:checked {
-    background-color: var(--primary);border-color: var(--primary) !important;
+    background-color: #4268B0;border-color: #4268B0 !important;
+    outline: 1px solid #ECECEC;
+    outline-offset: 3px;
 }
 
 .country__code__box {

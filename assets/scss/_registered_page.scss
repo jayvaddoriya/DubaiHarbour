@@ -76,7 +76,7 @@
     }
     .form-check-input {
         border: 1px solid #8CAFF0;
-        border-radius: 3px;
+        border-radius: 2px;
     } 
 
     .divider__line {
@@ -130,6 +130,122 @@
     .approved__box {
         max-width: 417px;
         color: #19315E;
+    }
+
+    .other__input__box .form-control {
+        font-size: .875rem;
+        font-weight: 300;
+        border-radius: .5rem;
+    }
+
+    .permit__select {
+        height: 3.5rem;max-width: 312px;background-color: #FBFBFB;
+    }
+
+    .profile__image {
+        width: 3.75rem;height: 3.75rem;
+    }
+
+    .search__box {
+        max-width: 232px;
+        .form-control {
+            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExIDIwQzE1Ljk3MDYgMjAgMjAgMTUuOTcwNiAyMCAxMUMyMCA2LjAyOTQ0IDE1Ljk3MDYgMiAxMSAyQzYuMDI5NDQgMiAyIDYuMDI5NDQgMiAxMUMyIDE1Ljk3MDYgNi4wMjk0NCAyMCAxMSAyMFoiIHN0cm9rZT0iIzY3OTFERSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTguOTI4NSAyMC42ODk4QzE5LjQ1ODUgMjIuMjg5OCAyMC42Njg1IDIyLjQ0OTggMjEuNTk4NSAyMS4wNDk4QzIyLjQ0ODUgMTkuNzY5OCAyMS44ODg1IDE4LjcxOTggMjAuMzQ4NSAxOC43MTk4QzE5LjIwODUgMTguNzA5OCAxOC41Njg1IDE5LjU5OTggMTguOTI4NSAyMC42ODk4WiIgc3Ryb2tlPSIjNjc5MURFIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=) no-repeat center left 1rem / 1.25rem;
+            padding-left: 3rem;
+        }
+
+        @media (max-width: 575px) {
+            max-width: 100%;
+        }
+    }
+
+    .user__card {
+        box-shadow: 0px 0px 10px 0px #1A1A1A0D;
+        border-radius: var(--radius);
+        border: 1px solid rgba(163, 192, 246, 0.08);
+        background-color: #FFFFFF;
+
+        .user__card__img {
+            width: 6.25rem;height: 6.25rem;
+        }
+
+        .title { letter-spacing: -0.06px; }
+        .role { letter-spacing: -0.05px;opacity: .6; }
+        .email {
+            opacity: .8;
+            letter-spacing: -0.08px;
+        }
+
+        .user__card__actions {
+            .btn-outline-primary {
+                border-color: var(--light-blue02);background-color: #F5F8FF;
+
+                &:hover, &:focus {
+                    background-color: var(--light-blue02); 
+                    color: var(--primary);
+                }
+            }
+            .btn-primary {
+                border-color: #6791DE;background-color: #6791DE;
+            }
+            .btn-outline-light {
+                border-color: var(--light-blue);
+                color: var(--gray01);
+
+                &:hover, &:focus {
+                    background-color: var(--light-blue); 
+                    color: var(--primary);
+                }
+            }
+        }
+
+        @media (max-width:575px) {
+            box-shadow: none;
+            .user__card__img {
+                width: 3.5rem;height: 3.5rem;
+            }
+            .role {
+                font-size: 13px;
+            }
+            .email {
+                font-size: 11px;
+            }
+            .user__card__actions {
+                .btn {
+                    font-size: 12px;padding: .5rem 1rem;border-radius: .5rem;
+                }
+            }
+        }
+    }
+
+    .permit__box {
+        max-width: 736px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .permit__card {
+            background: linear-gradient(265.99deg, #F6F6F6 -92.69%, rgba(2, 71, 187, 0.99264) 43.49%, #0047BB 97.17%); 
+            box-shadow: 0px 1.24px 24.74px 0px #C5D0D666; 
+            box-shadow: 0px 8.66px 12.37px 0px #C5D0D640; 
+            box-shadow: 0px 4.95px 24.74px 0px #96A7AF66;
+            border-radius: .75rem;
+
+            .water__image {
+                top: 10%;
+            }
+
+
+            .profile__image {
+                width: 2.875rem;height: 2.875rem;
+            }
+
+            .badge {
+                width: 6rem;height: 2rem;background-color: #DBFFE5;color: #005B49;
+
+                &.badge-warning {
+                    background-color: #FFEBEB;color: #FF1F1F;
+                }
+            }
+        }
     }
 }
 .mt--1 { margin-top: 1px; }
