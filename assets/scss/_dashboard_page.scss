@@ -15,31 +15,7 @@
         }
     }
 
-    .notification__list {
-        max-height: 321px;
-        overflow-y: auto;
-        li {
-            &:not(:last-child) {
-                border-bottom: 1px solid var(--light-blue);
-            }
-
-            a {
-                color: var(--gray01);
-
-                &.danger {
-                    color: var(--red);
-                }
-
-                .time {
-                    color: var(--gray03);
-                }
-
-                &:hover, &:focus {
-                    background-color: var(--gray04);
-                }
-            }
-        }
-    }
+   
 }
 
 @media (max-width: 1399px) {
@@ -57,4 +33,36 @@
 
 .outline__btn {
     width: 2.5rem;height: 2.5rem;border-radius: .5rem;border: 1px solid rgba(217, 230, 253, 0.6);
+}
+
+
+.notification__list {
+    max-height: 321px;
+    overflow-y: auto;
+
+    &.h-560 {
+        max-height: 560px;
+    }
+
+    li {
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--light-blue);
+        }
+
+        a {
+            color: var(--gray01);
+
+            &.danger {
+                color: var(--red);
+            }
+
+            .time {
+                color: var(--gray03);
+            }
+
+            &:hover, &:focus {
+                background-color: var(--gray04);
+            }
+        }
+    }
 }
