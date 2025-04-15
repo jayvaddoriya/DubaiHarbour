@@ -1,6 +1,6 @@
 <li class="px-md-4 py-3">
     <div class="row g-2 align-items-center"> 
-        <div class="col-md-9 col-8">
+        <div class="col">
             <div class="d-inline-flex align-items-center gap-3">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4" d="M30.75 15.285H26.415C22.86 15.285 19.965 12.39 19.965 8.835V4.5C19.965 3.675 19.29 3 18.465 3H12.105C7.485 3 3.75 6 3.75 11.355V24.645C3.75 30 7.485 33 12.105 33H23.895C28.515 33 32.25 30 32.25 24.645V16.785C32.25 15.96 31.575 15.285 30.75 15.285Z" fill="#A3C0F6"/>
@@ -9,12 +9,12 @@
                     <path d="M17.25 26.625H11.25C10.635 26.625 10.125 26.115 10.125 25.5C10.125 24.885 10.635 24.375 11.25 24.375H17.25C17.865 24.375 18.375 24.885 18.375 25.5C18.375 26.115 17.865 26.625 17.25 26.625Z" fill="#4D76C2"/>
                 </svg>
                 <div class="col">
-                    <span class="small fw-bold text-2b d-block mb-2 text-capitalize">#1089</span> 
+                    <span class="small fw-bold text-2b d-block text-capitalize">#1089</span> 
                 </div>
             </div>
         </div> 
-        <div class="col-md-3 col-4">
-            <div class="d-flex justify-content-center align-items-center gap-3 rounded-pill info__box py-2"> 
+        <div class="permit__col listing">
+            <div class="d-flex justify-content-center align-items-center gap-3 rounded-pill info__box renew__permit mx-auto py-2"> 
                 <button class="btn p-0 border-0">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.99935 18.3337C14.6017 18.3337 18.3327 14.6027 18.3327 10.0003C18.3327 5.39795 14.6017 1.66699 9.99935 1.66699C5.39698 1.66699 1.66602 5.39795 1.66602 10.0003C1.66602 14.6027 5.39698 18.3337 9.99935 18.3337Z" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

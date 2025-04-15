@@ -71,6 +71,7 @@ body {
 .fs-12 { font-size: 12px; }
 .fs-13 { font-size: 13px; }
 .fs-15 { font-size: .937rem; }     
+.text-gray { color: var(--gray01) !important; }  
 .text-muted { color: var(--gray03) !important; }  
 .bg-light { background-color: #fafafa !important; } 
 .bg-light-blue { background-color: var(--bg-light-blue) !important; }
@@ -80,7 +81,7 @@ body {
 .transition { transition: all .3s ease-in-out; }
 .round { border-radius: var(--border-radius); }
 .text-primary { color: var(--primary) !important; }  
-.text-dark { color:var(--dark) !important; }    
+.text-dark { color:var(--black01) !important; }    
 .text-justify { text-align: justify; }
 .container { max-width: calc(100% - 200px); }
 @media (max-width: 1599.99px) {
