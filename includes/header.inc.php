@@ -81,7 +81,7 @@
                 <div class="right-menu ">
                     <ul class="list-unstyled d-inline-flex align-items-center gap-3">
                         <li class="border-end pe-3">
-                            <a href="#" class="d-flex align-items-center gap-2">
+                            <a href="status.php" class="d-flex align-items-center gap-2">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.969727 11.7001L6.96973 11.6801C7.71973 11.6801 8.55973 12.2501 8.83973 12.9501L9.97973 15.8301C10.2397 16.4801 10.6497 16.4801 10.9097 15.8301L13.1997 10.0201C13.4197 9.46011 13.8297 9.44011 14.1097 9.97011L15.1497 11.9401C15.4597 12.5301 16.2597 13.0101 16.9197 13.0101H20.9797M7.96973 21H13.9697C18.9697 21 20.9697 19 20.9697 14V8C20.9697 3 18.9697 1 13.9697 1H7.96973C2.96973 1 0.969727 3 0.969727 8V14C0.969727 19 2.96973 21 7.96973 21Z" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -89,7 +89,7 @@
                             </a>
                         </li>
                         <li class="border-end pe-3">
-                            <a href="#" class="d-flex align-items-center gap-2">
+                            <a href="renew.php" class="d-flex align-items-center gap-2">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7.00986 13.5098C7.18986 13.8098 7.40985 14.0898 7.65985 14.3398C9.49985 16.1798 12.4898 16.1798 14.3398 14.3398C15.0898 13.5898 15.5199 12.6398 15.6599 11.6698M6.33984 10.3298C6.47984 9.34983 6.90985 8.40979 7.65985 7.65979C9.49985 5.81979 12.4898 5.81979 14.3398 7.65979C14.5998 7.91979 14.8098 8.1998 14.9898 8.4898M6.81985 16.1798V13.5098H9.48984M15.1798 5.81982V8.48981H12.5099M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>

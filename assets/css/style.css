@@ -729,7 +729,6 @@ ul li {
 }
 .registered__contractor__page .document__list.renew__permit__list {
   border-top: 0;
-  max-width: calc(100% - 5.25rem);
 }
 .registered__contractor__page .document__list.renew__permit__list li:last-child {
   border-bottom: 0;
@@ -869,10 +868,6 @@ ul li {
   max-width: 193px;
   flex: 0 0 193px;
 }
-.registered__contractor__page .permit__col.listing {
-  flex: 0 0 70px;
-  max-width: 70px;
-}
 .registered__contractor__page .permit__col .info__box.renew__permit {
   width: 2.25rem;
   background-color: transparent;
@@ -880,6 +875,12 @@ ul li {
 }
 .registered__contractor__page .permit__col .info__box.renew__permit:hover {
   background-color: var(--light-blue);
+}
+@media (max-width: 575px) {
+  .registered__contractor__page .permit__col {
+    max-width: 80px;
+    flex: 0 0 80px;
+  }
 }
 
 .mt--1 {
