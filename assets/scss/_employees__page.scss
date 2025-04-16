@@ -91,8 +91,11 @@
 
 
 
-.status__page {
-    .document__list li:last-child { border-bottom: 0; }
+.status__page { 
+    .document__list li {
+        border-bottom: 1px solid #ECECEC;
+        &:last-child { border-bottom: 0; }
+    }
     .custom__row {
         & > div {
             flex: 0 0 14.28%;max-width: 14.28%;

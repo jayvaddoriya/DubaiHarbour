@@ -1,6 +1,9 @@
 
 .attendance__page {
-    .document__list li:last-child { border-bottom: 0; }
+    .document__list li {
+        border-bottom: 1px solid #ECECEC;
+        &:last-child { border-bottom: 0; }
+    }
     .custom__row {
         & > .col { 
             font-size: 1rem;text-align: center;

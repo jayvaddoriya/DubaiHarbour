@@ -3,7 +3,7 @@
 <?php $showSubMenu=true; $type="security"; include('includes/header.inc.php'); ?>
 
     <main class="main__scroll__area"> 
-        <section class="registered__contractor__page attendance__page py-4">
+        <section class=" attendance__page py-4">
             <div class="container py-md-3">
                 <div class="box__shadow bg-white px-4 py-3 rounded-4 d-flex justify-content-between align-items-center mb-3 mb-md-4">
                     <h1 class="fw-semibold mb-0 lead-lg title__color text-center text-lg-start">Attendance</h1>
@@ -39,8 +39,8 @@
                     </div>
                 </div>          
                 
-                <div class="row g-4">
-                    <div class="col-xl-12">
+                <div class="">
+                    <div class="">
                      
                         <div class="box__shadow bg-white py-2 px-3 px-md-0 rounded-top-4 d-none d-lg-block"> 
                             <div class="px-4 py-3"> 

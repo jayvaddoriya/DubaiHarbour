@@ -1048,6 +1048,9 @@ ul li {
   }
 }
 
+.status__page .document__list li {
+  border-bottom: 1px solid #ECECEC;
+}
 .status__page .document__list li:last-child {
   border-bottom: 0;
 }
@@ -1189,6 +1192,9 @@ ul li {
     border-top-left-radius: var(--bs-border-radius-xl);
     border-top-right-radius: var(--bs-border-radius-xl);
   }
+}
+.attendance__page .document__list li {
+  border-bottom: 1px solid #ECECEC;
 }
 .attendance__page .document__list li:last-child {
   border-bottom: 0;
