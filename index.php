@@ -80,14 +80,16 @@
                     </div><!-- col-lg-7 -->
     
                     <div class="col-xl-4">
-                        <?php include('includes/notifications.inc.php'); ?> 
+                        <?php $scroll="small"; include('includes/notifications.inc.php'); ?> 
                     </div><!-- col-lg-4 -->
                 </div><!--.row-->
 
                 <div class="my-5 p-4 border rounded-3">
                     <a href="apply-for-permit-3.php" class="">QR Code</a> <br> 
                     <a href="documents.php" class="">Documents</a><br> 
-                    <a href="employees.php" class="">Employees List</a><br> 
+                    <a href="employees.php" class="">Employees</a><br> 
+                    <a href="security-login.php" class="">Security login</a><br> 
+                    <a href="security-home.php" class="">Security home</a><br> 
                 </div>
 
 

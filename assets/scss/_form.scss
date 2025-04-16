@@ -172,3 +172,53 @@
         }
     }
 }
+
+
+.flag__selection__box {
+    .form-control {
+        padding-left: 0 !important;opacity: 0;
+    }
+    .iti {
+        position: relative;
+        display: block;
+        background: var(--white);
+        border: 1px solid var(--light-blue02);
+        border-radius: var(--radius);
+        height: 3.25rem;
+        padding: 0.5rem 1rem;
+        width: 100%;
+    }
+    .iti__flag-container {
+        width: 100%;
+    }
+    .iti__selected-flag {
+        padding: .5rem 1rem;
+    }
+    .iti--separate-dial-code .iti__selected-flag {
+        background-color: var(--white);
+        border-radius: var(--radius);  
+        gap: 0.5rem;
+    }
+    
+    
+    .iti__arrow {
+        border-left-width: 5px;
+        border-right-width: 5px;
+        border-top-width: 6px;
+        border-top-color: var(--black02);
+        margin-left: auto;
+    }
+    .iti__dial-code {
+        display: none;
+    }
+    .iti__country-list {
+        width: 100%;
+    }
+    // .iti__country {
+    //     .iti__flag-box { display: none; }
+    //     .iti__country-name { display: none; }
+    // }
+    // .iti__country-list {
+    //     width: 113px;
+    // }
+}

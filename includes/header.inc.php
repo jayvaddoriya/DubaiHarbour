@@ -71,13 +71,47 @@
                         </div>
                         
                     </div> -->
-
+                    <?php if(isset($type) && $type == 'security'){ ?>
+                    <ul class="list-unstyled desktop-menu p-0 m-0 d-none d-lg-flex gap-2">
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="work-attendance.php">Work Attendance</a></li> 
+                    </ul>
+                    <?php } else { ?>
                     <ul class="list-unstyled desktop-menu p-0 m-0 d-none d-lg-flex gap-2">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li><a href="registered-contractor.php">Registered Contractor</a></li>
                         <li><a href="apply-for-permit.php">Apply For Permit</a></li>
                     </ul>
+                    <?php } ?>
                 </div>
+                <?php if(isset($type) && $type == 'security'){ ?>
+                <div class="right-menu ">
+                    <ul class="list-unstyled d-inline-flex align-items-center gap-3">
+                        <li class="border-end pe-3">
+                            <a href="work-attendance.php" class="d-flex align-items-center gap-2">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.5901 22C20.5901 18.13 16.7402 15 12.0002 15C7.26015 15 3.41016 18.13 3.41016 22" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                                <span class="d-none d-lg-inline-block">Attendance</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="d-flex align-items-center gap-2">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 9V6.5C2 4.01 4.01 2 6.5 2H9" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 2H17.5C19.99 2 22 4.01 22 6.5V9" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 16V17.5C22 19.99 19.99 22 17.5 22H16" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 22H6.5C4.01 22 2 19.99 2 17.5V15" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 9.5V14.5C17 16.5 16 17.5 14 17.5H10C8 17.5 7 16.5 7 14.5V9.5C7 7.5 8 6.5 10 6.5H14C16 6.5 17 7.5 17 9.5Z" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 12H5" stroke="#0040B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                                <span class="d-none d-lg-inline-block">QR Code</span>
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+                <?php } else { ?>
                 <div class="right-menu ">
                     <ul class="list-unstyled d-inline-flex align-items-center gap-3">
                         <li class="border-end pe-3">
@@ -141,6 +175,7 @@
                         </li>
                     </ul>
                 </div>
+                <?php } ?>
             </div>
         </div>
     </div>

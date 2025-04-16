@@ -172,7 +172,7 @@
 
     <!-- Modal -->
     <div class="modal fade new__member__modal" id="newMemberModal" tabindex="-1" aria-labelledby="newMemberModalLabel" aria-hidden="true">
-        <div class="modal-dialog" style="max-width: 1140px;">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 1140px;">
             <div class="modal-content">
                 <div class="modal-header border-0 rounded-top-4">
                     <p class="lead-lg fw-semibold text-dark m-0" id="newMemberModalLabel">Add Employee Form</p>
@@ -236,15 +236,11 @@
                                 <div class="col-md-6">
                                     <div class="form-group country__code__box">
                                         <label class="label">Nationality</label>
-                                        <div class="d-flex gap-3 flex-row"> 
-                                            <div class="code__box">
-                                                <input type="hidden" name="phoneDialCode" id="phoneDialCode">
-                                                <input type="text" name="country_code" id="country_code" class="form-control" placeholder="Country Code">
-                                            </div>
-                                            <div class="col"> 
-                                                <input type="text" name="phone_number" class="form-control" placeholder="11111111" />
-                                            </div> 
-                                        </div>
+                                        <div class="flag__selection__box">
+                                            <input type="hidden" name="countryName" id="countryName">
+                                            <input type="text" name="country_flag" id="country_flag" class="form-control" placeholder="Country Code">
+                                        </div> 
+                                        
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -314,7 +310,7 @@
         $("#country_code").intlTelInput({
             initialCountry: "ae",
             separateDialCode: true, 
-        });
+        }); 
         $(document).ready(function() {
             $("#country_code").on("countrychange", function() {
                 var selectedCountryData = $("#country_code").intlTelInput("getSelectedCountryData");
@@ -323,6 +319,11 @@
                 // console.log("Selected phone code:", phoneCode);
             });
         });
+
+
+        const iti = $("#country_flag").intlTelInput({
+            initialCountry: "auto", 
+        }); 
     </script>
 
     <script>

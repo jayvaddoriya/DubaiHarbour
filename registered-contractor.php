@@ -398,7 +398,7 @@
     
     <!-- Modal -->
     <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-        <div class="modal-dialog" style="max-width:582px;">
+        <div class="modal-dialog modal-dialog-centered" style="max-width:582px;">
             <div class="modal-content border-0 rounded-4" style=""> 
                 <div class="modal-body py-5 px-4 px-lg-5">
                     <p class="mb-1 text-2b fw-semibold small">Document Detail</p>

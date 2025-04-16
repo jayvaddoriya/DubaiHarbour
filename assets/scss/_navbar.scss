@@ -23,6 +23,8 @@
     .desktop-menu {
         font-size: 1.125rem;
         line-height: 1;
+        align-items: center;
+        
         .active a {
             font-size: 1.25rem;font-weight: 700;
             font-family: var(--oatmeal-bold);

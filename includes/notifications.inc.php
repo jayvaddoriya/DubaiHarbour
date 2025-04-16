@@ -39,7 +39,7 @@
     </div>
 </div>
 <div class="auth__form__box box__shadow bg-white rounded-bottom-4 mt-2">
-    <ul class="list-unstyled p-0 m-0 notification__list h-560 text-start">
+    <ul class="list-unstyled p-0 m-0 notification__list <?php if(isset($scroll) && $scroll == 'small'){echo ''; } else{ echo ' h-560'; }?> text-start">
         <li>
             <a href="#" class="danger d-flex justify-content-between align-items-start gap-2 flex-column flex-sm-row flex-lg-column flex-xxl-row fw-normal px-4 py-3">
                 <span class="d-block">Always Look On The Bright Side Of Life</span>

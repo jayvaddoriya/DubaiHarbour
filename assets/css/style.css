@@ -14,6 +14,7 @@
   --gray03: #7D7D7D;
   --gray04: #F5F5F5;
   --gray05: #9E9E9E;
+  --gray06: #F5F8FF;
   --body-bg: #F5F5F5;
   --red: #F43737;
   --oatmeal-regular: "OatmealProTRIAL-Regular";
@@ -331,6 +332,7 @@ ul li {
 .bottom-header .desktop-menu {
   font-size: 1.125rem;
   line-height: 1;
+  align-items: center;
 }
 .bottom-header .desktop-menu .active a {
   font-size: 1.25rem;
@@ -357,7 +359,7 @@ ul li {
   --bs-offcanvas-height: 184px;
 }
 
-.theme-footer {
+.theme-footer .border-top {
   border-color: var(--light-blue01) !important;
 }
 .theme-footer a {
@@ -554,6 +556,45 @@ ul li {
   box-shadow: 0px 0px 8px 0px rgba(187, 187, 187, 0.1215686275);
 }
 
+.flag__selection__box .form-control {
+  padding-left: 0 !important;
+  opacity: 0;
+}
+.flag__selection__box .iti {
+  position: relative;
+  display: block;
+  background: var(--white);
+  border: 1px solid var(--light-blue02);
+  border-radius: var(--radius);
+  height: 3.25rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.flag__selection__box .iti__flag-container {
+  width: 100%;
+}
+.flag__selection__box .iti__selected-flag {
+  padding: 0.5rem 1rem;
+}
+.flag__selection__box .iti--separate-dial-code .iti__selected-flag {
+  background-color: var(--white);
+  border-radius: var(--radius);
+  gap: 0.5rem;
+}
+.flag__selection__box .iti__arrow {
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 6px;
+  border-top-color: var(--black02);
+  margin-left: auto;
+}
+.flag__selection__box .iti__dial-code {
+  display: none;
+}
+.flag__selection__box .iti__country-list {
+  width: 100%;
+}
+
 .dashboard__page .info__box {
   border: 0.3px solid rgba(217, 230, 253, 0.3568627451);
   box-shadow: 0px 0px 10px 0px rgba(58, 58, 58, 0.0509803922);
@@ -568,6 +609,47 @@ ul li {
 }
 .dashboard__page .info__box .number {
   color: var(--black02);
+}
+.dashboard__page .security__info__box {
+  max-width: 834px;
+}
+.dashboard__page .check__in__btn__box {
+  max-width: 600px;
+}
+.dashboard__page .check__in__btn__box .btn {
+  color: var(--black01);
+  border-radius: var(--radius);
+}
+.dashboard__page .check__in__btn__box .btn .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-blue);
+  transition: all 0.3s ease-in-out;
+}
+.dashboard__page .check__in__btn__box .btn:hover, .dashboard__page .check__in__btn__box .btn:focus, .dashboard__page .check__in__btn__box .btn:active {
+  background-color: var(--light-blue);
+  border-color: var(--light-blue);
+  color: var(--dark);
+}
+.dashboard__page .check__in__btn__box .btn:hover .icon, .dashboard__page .check__in__btn__box .btn:focus .icon, .dashboard__page .check__in__btn__box .btn:active .icon {
+  background-color: #F5F8FF;
+}
+.dashboard__page .check__in__btn__box .check__in__btn {
+  background-color: #F5F8FF;
+  border-color: #F5F8FF;
+}
+.dashboard__page .check__in__btn__box .check__out__btn {
+  background-color: transparent;
+  border-color: var(--light-blue);
+}
+.dashboard__page .check__in__btn__box .check__out__btn:hover, .dashboard__page .check__in__btn__box .check__out__btn:focus, .dashboard__page .check__in__btn__box .check__out__btn:active {
+  background-color: var(--light-blue);
+  border-color: var(--light-blue);
+  color: var(--dark);
+}
+.dashboard__page .check__in__btn__box .check__out__btn:hover .icon, .dashboard__page .check__in__btn__box .check__out__btn:focus .icon, .dashboard__page .check__in__btn__box .check__out__btn:active .icon {
+  background-color: #F5F8FF;
 }
 
 @media (max-width: 1399px) {
@@ -1107,4 +1189,198 @@ ul li {
     border-top-left-radius: var(--bs-border-radius-xl);
     border-top-right-radius: var(--bs-border-radius-xl);
   }
+}
+.attendance__page .document__list li:last-child {
+  border-bottom: 0;
+}
+.attendance__page .custom__row > .col {
+  font-size: 1rem;
+  text-align: center;
+}
+.attendance__page .custom__row > .col:nth-child(4) {
+  flex: 0 0 13.33%;
+  max-width: 13.33%;
+}
+.attendance__page .custom__row > .col:nth-child(5), .attendance__page .custom__row > .col:nth-child(6) {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+@media (min-width: 992px) {
+  .attendance__page .custom__row > .col:nth-child(3) {
+    flex: 0 0 20%;
+    max-width: 20%;
+    order: 1;
+  }
+  .attendance__page .custom__row > .col:nth-child(2) {
+    flex: 0 0 13.33%;
+    max-width: 13.33%;
+    order: 2;
+  }
+  .attendance__page .custom__row > .col:nth-child(1) {
+    flex: 0 0 13.33%;
+    max-width: 13.33%;
+    order: 3;
+  }
+  .attendance__page .custom__row > .col:nth-child(4) {
+    order: 4;
+  }
+  .attendance__page .custom__row > .col:nth-child(5) {
+    order: 5;
+  }
+  .attendance__page .custom__row > .col:nth-child(6) {
+    order: 6;
+  }
+}
+.attendance__page .custom__row.header__row > .col {
+  border-left: 1px solid #ECECEC;
+}
+.attendance__page .custom__row.header__row > .col:nth-child(3) {
+  border-left: 0;
+}
+.attendance__page .custom__row.body__row {
+  padding: 0.75rem 0;
+}
+.attendance__page .custom__row.body__row > .col {
+  font-size: 0.875rem;
+  text-align: center;
+  color: rgba(43, 43, 43, 0.9);
+}
+.attendance__page .custom__row.body__row > .col .info__box {
+  opacity: 1;
+  color: var(--black01);
+}
+@media (max-width: 991px) {
+  .attendance__page .custom__row.body__row > .col:nth-child(1) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: -1rem;
+  }
+  .attendance__page .custom__row.body__row > .col:nth-child(3) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .attendance__page .custom__row.body__row > .col:nth-child(6) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: right;
+  }
+  .attendance__page .custom__row.body__row .number {
+    font-size: 11px;
+    color: var(--gray03);
+  }
+  .attendance__page .custom__row.body__row .title {
+    font-weight: 700;
+    font-family: var(--oatmeal-bold);
+  }
+  .attendance__page .custom__row.body__row .res__infos {
+    font-size: 12px;
+    color: var(--gray03);
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .attendance__page .custom__row.body__row .res__infos span:not(:last-child) {
+    border-right: 1px solid var(--black02);
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .attendance__page .custom__row.body__row .permit__btn svg {
+    width: 1.25rem;
+    height: auto;
+  }
+}
+@media (max-width: 575px) {
+  .attendance__page .custom__row.body__row > .col:nth-child(1) {
+    padding-left: 0rem;
+  }
+  .attendance__page .custom__row.body__row > .col:nth-child(3) {
+    padding-left: 0rem;
+  }
+  .attendance__page .custom__row.body__row .res__infos {
+    font-size: 10px;
+    color: var(--gray03);
+  }
+  .attendance__page .custom__row.body__row .res__infos span:not(:last-child) {
+    border-right: 1px solid var(--black02);
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.checkin__page .picker__input {
+  max-width: 120px;
+}
+@media (max-width: 575px) {
+  .checkin__page .picker__input {
+    max-width: 100%;
+  }
+}
+.checkin__page .scan__card {
+  border: 0.3px solid rgba(217, 230, 253, 0.3568627451);
+  box-shadow: 0px 0px 10px 0px rgba(58, 58, 58, 0.0509803922);
+  border-radius: 0.875rem;
+}
+.checkin__page .scan__card .scan__btn {
+  background-color: #F5F8FF;
+  border-color: #F5F8FF;
+  width: 5rem;
+  height: 5rem;
+}
+.checkin__page .scan__card .scan__btn svg {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+@media (max-width: 575px) {
+  .checkin__page .scan__card {
+    display: flex;
+    flex-direction: column-reverse;
+    border-color: var(--light-blue02);
+    box-shadow: none;
+  }
+  .checkin__page .scan__card .title {
+    opacity: 1 !important;
+    font-size: 13px;
+  }
+  .checkin__page .scan__card .scan__btn {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+  }
+}
+.checkin__page .scan__status__box {
+  border-color: var(--light-blue) !important;
+}
+.checkin__page .scan__status__box .icon {
+  background-color: var(--gray06);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+@media (max-width: 575px) {
+  .checkin__page .scan__status__box {
+    border-color: var(--light-blue02) !important;
+    border-radius: var(--radius) !important;
+  }
+  .checkin__page .scan__status__box .icon {
+    background-color: transparent;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.checkin__page .btn__mark {
+  min-height: 3.25rem;
+  border-color: var(--primary);
+  min-width: 225px;
+}
+.checkin__page .heading__box__padding {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.checkin__page .permit__card {
+  max-width: 340px;
 }/*# sourceMappingURL=style.css.map */

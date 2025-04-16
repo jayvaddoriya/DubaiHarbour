@@ -48,7 +48,7 @@
     
     <!-- Modal -->
     <div class="modal fade registered__contractor__page" id="viewPermitModal" tabindex="-1" aria-labelledby="viewPermitModalLabel" aria-hidden="true">
-        <div class="modal-dialog" style="max-width: 640px;">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 640px;">
             <div class="modal-content">
                 <div class="modal-header border-0 rounded-top-4">
                     <p class="lead-lg fw-semibold text-dark m-0" id="viewPermitModalLabel">Digital Permit</p>

@@ -15,6 +15,44 @@
         }
     }
 
+
+    .security__info__box {
+        max-width: 834px;
+    }
+    .check__in__btn__box {
+        max-width: 600px;
+
+        .btn {
+            color: var(--black01);
+            border-radius: var(--radius);
+
+            .icon {
+                width: 2.5rem;height: 2.5rem;border-radius: .5rem;background-color: var(--light-blue);
+                transition: all 0.3s ease-in-out;
+
+            }
+            &:hover, &:focus, &:active {
+                background-color: var(--light-blue);border-color: var(--light-blue);color: var(--dark);
+                .icon {
+                    background-color: #F5F8FF;
+                }
+            }
+        }
+
+        .check__in__btn {
+            background-color: #F5F8FF;border-color: #F5F8FF;  
+        }
+        .check__out__btn {
+            background-color: transparent;border-color: var(--light-blue); 
+            
+            &:hover, &:focus, &:active {
+                background-color: var(--light-blue);border-color: var(--light-blue);color: var(--dark);
+                .icon {
+                    background-color: #F5F8FF;
+                }
+            }
+        }
+    }
    
 }
 
