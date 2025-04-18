@@ -236,8 +236,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group country__code__box">
                                         <label class="label">Nationality</label>
-                                        <div class="flag__selection__box">
-                                            <input type="hidden" name="countryName" id="countryName">
+                                        <div class="flag__selection__box position-relative">
+                                            <input 
+                                                type="text" name="countryName" id="countryName" 
+                                                class="form-control position-absolute top-0 h-100 start-0 opacity-100 bg-transparent pe-5 shadow-none"  
+                                                style="outline:none !important;
+                                                padding-left: 3.5rem !important;z-index: 99;
+                                                pointer-events: none;"
+                                            >
                                             <input type="text" name="country_flag" id="country_flag" class="form-control" placeholder="Country Code">
                                         </div> 
                                         
@@ -269,7 +275,7 @@
                                                         <span>Browse files</span>
                                                         <input type="file" class="position-absolute top-0 start-0 opacity-0" id="file">
                                                     </label>
-                                                    <button class="position-absolute end-0 m-0 info__icon btn p-0 border-0" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                                    <button type="button" class="position-absolute end-0 m-0 info__icon btn p-0 border-0" data-bs-toggle="modal" data-bs-target="#infoModal">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                             <path d="M10 1C5.0365 1 1 5.03758 1 10C1 14.9635 5.03758 19 10 19C14.9635 19 19 14.9624 19 10C19 5.0365 14.9624 1 10 1ZM10 2.12935C14.355 2.12935 17.8716 5.64593 17.8716 10.001C17.8716 14.356 14.355 17.8726 10 17.8726C5.64496 17.8726 2.12837 14.356 2.12837 10.001C2.12837 5.64593 5.64496 2.12935 10 2.12935Z" fill="#6791DE"/>
                                                             <path d="M10.0008 9.4358C9.85102 9.43475 9.70657 9.4938 9.6011 9.60031C9.4946 9.70575 9.43555 9.85022 9.43555 9.99996V13.969C9.43555 14.1187 9.4946 14.2632 9.6011 14.3686C9.70654 14.4751 9.85101 14.5342 10.0008 14.5331C10.1505 14.5342 10.2949 14.4751 10.4004 14.3686C10.5069 14.2632 10.566 14.1187 10.5649 13.969V9.99996C10.566 9.85022 10.5069 9.70577 10.4004 9.60031C10.295 9.4938 10.1505 9.43475 10.0008 9.4358Z" fill="#6791DE"/>
@@ -300,6 +306,22 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width:582px;">
+            <div class="modal-content border-0 rounded-4" style=""> 
+                <div class="modal-body py-5 px-4 px-lg-5">
+                    <p class="mb-1 text-2b fw-semibold small">Document Detail</p>
+                    <p class="text-2b small">
+                        -Trading Name to be accurate with company obtaining permit to work <br>
+                        -Must be in date <br>
+                        -Must state accurate license activities for works to be carried out
+                    </p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
 
 <!-- footer and all scripts -->
 <?php   
@@ -324,6 +346,14 @@
         const iti = $("#country_flag").intlTelInput({
             initialCountry: "auto", 
         }); 
+        $(document).ready(function() {
+            $("#country_flag").on("countrychange", function() {
+                var selectedCountryFlag = $("#country_flag").intlTelInput("getSelectedCountryData");
+              
+                $("#countryName").val(selectedCountryFlag.name);
+                // console.log("Selected phone code:", selectedCountryData.name);
+            });
+        });
     </script>
 
     <script>

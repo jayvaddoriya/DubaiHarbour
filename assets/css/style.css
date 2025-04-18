@@ -581,6 +581,12 @@ ul li {
   border-radius: var(--radius);
   gap: 0.5rem;
 }
+.flag__selection__box .iti--separate-dial-code .iti__selected-flag:hover {
+  background-color: #fff;
+}
+.flag__selection__box .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+  background-color: #fff;
+}
 .flag__selection__box .iti__arrow {
   border-left-width: 5px;
   border-right-width: 5px;
@@ -593,6 +599,7 @@ ul li {
 }
 .flag__selection__box .iti__country-list {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .dashboard__page .info__box {
@@ -1139,6 +1146,10 @@ ul li {
   }
 }
 
+.new__member__modal .modal-body {
+  max-height: calc(100vh - 125px);
+  overflow-y: auto;
+}
 .new__member__modal .upload__box {
   width: 9.375rem;
   height: 9.375rem;
